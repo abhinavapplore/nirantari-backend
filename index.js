@@ -9,7 +9,7 @@ app.use(express.json());
 
 
 app.use(cors(
-  origin= 'https://nirantari-backend.vercel.app',
+  origin= 'http://localhost:3000',
   methods= ['GET', 'POST'],
   allowedHeaders= ['Content-Type', 'Authorization'],
   ))

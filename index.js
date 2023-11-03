@@ -12,10 +12,17 @@ app.use(require("./route"));
 // app.use('/subscriber', router)
 
 app.get('/', (req, res) => {
-  res.send({
+  return res.status(200).send({
+    success:true,
     message: "hi backend server"
   })
 })
+app.get('/testing', (req, res) => {
+    return res.status(200).send({
+      success:true,
+      message: "hi testing server"
+    })
+  })
 
 
 

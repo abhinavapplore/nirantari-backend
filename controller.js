@@ -4,6 +4,9 @@ const { body, validationResult } = require("express-validator");
 const User = require('./model');
 
 const transporter = nodemailer.createTransport({
+  host: "smtp.forwardemail.net",
+  port: 465,
+  secure: true,
   service: "gmail",
   auth: {
     user: process.env.EMAIL_FOR_NODEMAILER,
